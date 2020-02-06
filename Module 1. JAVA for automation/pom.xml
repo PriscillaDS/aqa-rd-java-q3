@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Module 1. JAVA for automation</artifactId>
+    <artifactId>Module_1_JAVA_for_automation</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
@@ -15,8 +15,8 @@
 
         <owner.version>1.0.4</owner.version>
         <lombok.version>1.18.10</lombok.version>
-        <commons.version>2.6</commons.version>
         <log4j.version>1.2.17</log4j.version>
+        <commons.lang3.version>3.8.1</commons.lang3.version>
     </properties>
 
     <dependencies>
@@ -32,14 +32,14 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>${commons.version}</version>
-        </dependency>
-        <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons.lang3.version}</version>
         </dependency>
     </dependencies>
 

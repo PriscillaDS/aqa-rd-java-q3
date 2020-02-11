@@ -7,5 +7,6 @@ import lombok.*;
 @ToString(exclude = "weight")
 abstract class Animal {
     protected String name;
-    @Setter protected int weight;
+    @Setter
+    protected int weight;
 }

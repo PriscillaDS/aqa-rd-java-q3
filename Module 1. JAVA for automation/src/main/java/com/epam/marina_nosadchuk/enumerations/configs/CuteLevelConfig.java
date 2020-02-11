@@ -5,7 +5,7 @@ import com.epam.marina_nosadchuk.enumerations.converters.CuteLevelConverter;
 import org.aeonbits.owner.Config;
 
 @Config.Sources("classpath:cuteLevel/cuteLevel.properties")
-public interface CuteLevelConfig extends Config{
+public interface CuteLevelConfig extends Config {
     @Key("one.prop")
     @ConverterClass(CuteLevelConverter.class)
     CuteLevel getFirstValue();

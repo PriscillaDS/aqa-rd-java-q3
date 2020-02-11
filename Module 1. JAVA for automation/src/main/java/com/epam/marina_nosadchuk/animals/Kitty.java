@@ -27,11 +27,10 @@ public class Kitty extends Animal {
         log.info("Cat was born");
     }
 
-    public void eatFood(EatCharacteristic eatCharacteristic){
-        if(this.dailyFood.getWeight() == 0.0) {
+    public void eatFood(EatCharacteristic eatCharacteristic) {
+        if (this.dailyFood.getWeight() == 0.0) {
             log.warn("Cat worried about food shortage");
-        }
-        else{
+        } else {
             float foodLeft = dailyFood.getWeight() - eatCharacteristic.getEaten();
             if (foodLeft < 0) {
                 foodLeft = 0;
@@ -42,9 +41,9 @@ public class Kitty extends Animal {
     }
 
     @SneakyThrows
-    public void killKitty(){
+    public void killKitty() {
         log.error(StringUtils.replace("Kitty name was died", "name", this.name));
-        if(this.cuteLevel!=CuteLevel.BAD_CAT){
+        if (this.cuteLevel != CuteLevel.BAD_CAT) {
             log.info(StringUtils.replace("Owner name is sad", "name", this.owner.getFirstName()));
         }
         throw new InterruptedException("Cat dead");

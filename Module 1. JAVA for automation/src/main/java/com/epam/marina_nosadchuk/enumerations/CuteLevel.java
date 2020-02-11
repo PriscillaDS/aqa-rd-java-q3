@@ -12,6 +12,6 @@ public enum CuteLevel {
 
     @Override
     public String toString() {
-        return StringUtils.capitalize(StringUtils.lowerCase(StringUtils.replace(name(), "_"," ")));
+        return StringUtils.capitalize(StringUtils.lowerCase(StringUtils.replace(name(), "_", " ")));
     }
 }

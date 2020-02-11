@@ -1,6 +1,6 @@
 package com.epam.marina_nosadchuk.humans;
 
-import lombok.*;
+import lombok.Data;
 
 @Data
 public class Owner {

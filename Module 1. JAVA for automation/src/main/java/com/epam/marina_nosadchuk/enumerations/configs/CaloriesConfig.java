@@ -3,7 +3,7 @@ package com.epam.marina_nosadchuk.enumerations.configs;
 import org.aeonbits.owner.Config;
 
 @Config.Sources("classpath:calories/calories.properties")
-public interface CaloriesConfig extends Config{
+public interface CaloriesConfig extends Config {
     @Key("one.prop")
     String getFirstValue();
 

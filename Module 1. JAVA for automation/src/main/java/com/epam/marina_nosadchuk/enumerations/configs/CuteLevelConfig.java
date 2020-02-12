@@ -4,6 +4,8 @@ import com.epam.marina_nosadchuk.enumerations.CuteLevel;
 import com.epam.marina_nosadchuk.enumerations.converters.CuteLevelConverter;
 import org.aeonbits.owner.Config;
 
+import java.util.ArrayList;
+
 @Config.Sources("classpath:cuteLevel/cuteLevel.properties")
 public interface CuteLevelConfig extends Config {
     @Key("one.prop")

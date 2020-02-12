@@ -8,29 +8,17 @@ import org.aeonbits.owner.ConfigFactory;
 import java.util.Random;
 
 public class PropertyHolder {
-    private CuteLevelConfig cuteLevel = ConfigFactory.create(CuteLevelConfig.class);
     private CaloriesConfig calories = ConfigFactory.create(CaloriesConfig.class);
 
     public CuteLevel getCuteLevel() {
         Random random = new Random();
-        int i = random.nextInt(5);
-        switch (i) {
-            case (1):
-                return cuteLevel.getFirstValue();
-            case (2):
-                return cuteLevel.getSecondValue();
-            case (3):
-                return cuteLevel.getThirdValue();
-            case (4):
-                return cuteLevel.getFourthValue();
-            default:
-                return cuteLevel.getFifthValue();
-        }
+        int i = random.nextInt(4);
+        return CuteLevel.values()[i];
     }
 
     public int getCalories() {
         Random random = new Random();
-        int i = random.nextInt(5);
+        int i = random.nextInt(4);
         switch (i) {
             case (1):
                 return Integer.parseInt(calories.getFirstValue());

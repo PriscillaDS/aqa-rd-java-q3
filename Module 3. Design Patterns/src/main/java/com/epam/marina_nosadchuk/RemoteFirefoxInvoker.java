@@ -11,7 +11,7 @@ public class RemoteFirefoxInvoker implements WebDriverInvoker{
     @SneakyThrows
     @Override
     public WebDriver invokeWebDriver() {
-        return new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), new FirefoxOptions());
+        return new RemoteWebDriver(new URL("http://localhost:5555/wd/hub"), new FirefoxOptions());
     }
 
 }
